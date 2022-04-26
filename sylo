@@ -16,6 +16,7 @@
        margin: 0 auto;
        display:flex;
     }
+    
     .thirdchild{
         margin: auto;
     }
@@ -75,6 +76,7 @@
     
     .img2{
         display: flex;
+        padding-left: 6rem;
     }
 
     .box5{
@@ -97,9 +99,8 @@
         border-radius: 10px;
         font-size: 14px;
         color: white;
-        align-items: center;
-        padding-left: 7px;
         margin-left: 6rem;
+        justify-content: center;
     }
 
     .img3{
@@ -128,53 +129,57 @@
         padding-left: 6px;
     }
 
+    .wordsbox{
+        display: flex;
+        border: 2px rgb(255, 255, 255) solid;
+        height: 10rem;
+        width: 50rem;
+        margin-top: 3rem;
+        padding-left: 2rem;
+    }
+
     .words1{
         display: flex;
-        color: rgb(124, 124, 124);
-        flex-direction: row;
-        margin-top: 6rem;
+        color: grey;
+        flex-direction: column;
         height: 1rem;
-        width: 7rem;
     }
 
     .words2{
         display: flex;
-        font-size: 3rem;
-        flex-direction: row;
         color: #000;
-        height: 4rem;
-        width: 9rem;
-        background-color: mediumvioletred;
+        flex-direction: column;
+        height: 3rem;
+        font-size: 2rem;
     }
 
     .words3{
         display: flex;
-        color: rgb(124, 124, 124);
+        color: grey;
+        flex-direction: column;
+        height: 1rem;
+        padding-right: 1rem;
+    }
+
+    .words4{
+        display: flex;
+        color: #000;
+        font-size: 2rem;
         flex-direction: row;
-        width: 10rem;
+        height:  1px;
     }
 
     .img4{
         display: flex;
-        flex-direction: row;
-        width: 5rem;
-        background-color: darkgoldenrod;
-        padding-left: 10rem;
+        padding-left: 4rem;
     }
 
-    .words4{
+    .img5{
         display: flex;
-        color: rgb(124, 124, 124);
-        padding-left: 1rem;
+        padding-left: 8rem;
+        margin-left: 2rem;
         flex-direction: row;
-        margin-top: 0rem;
-        height: 1rem;
-        width: 7rem;
-    }
-
-    .words4{
-        display: flex;
-        font-size: 30px;
+        height: 40px;
     }
 
     
@@ -212,19 +217,33 @@
                  <div class="img3"><img src="img/lol.png" alt="no " height="90rem" width="100rem"> 
                   <div class="box7"> <div class="box8">Hey, Sylo is the easiest place where you can <br> buy and sell crypto </div> </div> </div>
     
-                  <div class="words1">Up 
-                    <div class="img4">  
-                        <svg height="110" width="500">
-                          <line x1="0" y1="0" x2="200" y2="19990" style="stroke:grey;stroke-width:2"/>
-                          Sorry, your browser does not support inline SVG.
-                        </svg>
-                        
-                      </div>
-                      <div class="words4">Up </div>
-                  </div>                  
-                  <div class="words2">10%<br> 
-                    </div> 
-                  <div class="words3"> Discount on Crypot </div>  
+                   <div class="wordsbox">
+                      <div class="words1"> Up to
+                        <div class="words2">10%</div>
+                        <div class="words3">Discount on crypot</div>
+                      </div>                      
+                       <svg height="100" width="50">
+                        <line x1="0" y1="0" x2="200" y2="910000" style="stroke:grey;stroke-width:2" />
+                        Sorry, your browser does not support inline SVG.
+                      </svg>
+
+                      <div class="words1"> Up to
+                        <div class="words2">15%</div>
+                        <div class="words3">Growth Estimate</div>
+                      </div> 
+                       <svg height="100" width="50">
+                        <line x1="0" y1="0" x2="200" y2="910000" style="stroke:grey;stroke-width:2" />
+                        Sorry, your browser does not support inline SVG.
+                      </svg>
+
+                      <div class="words1"> 
+                       <div class="img4"><img src="img/arrow.png" alt="no " height="35rem" width="100rem"></div>
+                        <div class="words4">100% Safe
+                        </div>
+                        <div class="img5"><img src="img/circle.png" alt="no " height="55rem" width="70rem"></div>
+                        <div class="words3">Your money is Safe</div>
+                      </div> 
+                   </div>
                    
                 </div> 
         </div>                     
