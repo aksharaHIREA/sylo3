@@ -8,30 +8,31 @@
 
 
     body{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
           Geneva, Verdana, sans-serif;
+          margin: 0 auto;
+          display: flex;
     }
 
     .main{
        margin: 0 auto;
        display:flex;
+       flex-direction: column;
     }
     
-    .thirdchild{
-        margin: auto;
-    }
-
     .box1{
         display: flex;
         color: midnightblue; 
         text-align: center;
-        height: 6rem;
+        text-decoration: none;
     }
 
-    .box2{ 
-        color: #000;
-        padding-top: 11px;
-        width: 40rem;
+    .topnav a { 
+        color: #000;        
+        padding: 20px 30px;
+        text-decoration: none;  
+        flex-direction: row; 
+      
     }
 
     .box3{
@@ -182,24 +183,54 @@
         height: 40px;
     }
 
+    .topnav a:hover {
+        background-color: grey;
+        color: black;
+        
+    }
+
+    .downnav{
+        display: flex;
+        width: 15rem;
+        flex-direction: column;
+    }
+
+    .topnav {
+  overflow: hidden;
+  float: left;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+    @media screen and (max-width: 600px) {
+      .topnav a {
+          float: none;
+          width: 100%;
+          display: block;
+       }
+    }
+
     
 </style>
 <body>
-
-    <div class="main">
-        <div class="thirdchild">
-        <div class="box">
-            
-             <div class="box1"><h1>Sylo</h1>              
-                 <div class="box2"><h5> Case Study &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Solution  &nbsp&nbsp&nbsp
-                     &nbsp&nbsp&nbsp  Services  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Conpany  &nbsp&nbsp&nbsp&nbsp&nbsp
-                     &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Sign in  &nbsp&nbsp&nbsp
-                    <input type="submit" class="box3" value="Send">                                  
-                    </h5></div>
+<div class="main">
+        
+                <div class="topnav">
+                    <div class="topnav a">
+                     <a href="#">Sylo</a> 
+                    <a href="#"> Case Study </a> 
+                    <a href="#"> Solution </a>
+                    <a href="#"> Services </a>
+                    <a href="#"> Conpany  </a>
+                    <a href="#"> Sign in </a> 
+                    <a href="#"><input type="submit" class="box3" value="Send"> </a>                                
+                </div>
+            </div> 
                     
-             </div>  
+               
              <br><br><br>
+            <div class="downnav"> 
              <div class="words">Get a quick Overview <div class="img"> 
                  <img src="img/good.png" alt="no " height="25px" width="30px">
                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -244,8 +275,8 @@
                         <div class="words3">Your money is Safe</div>
                       </div> 
                    </div>
-                   
-                </div> 
+                </div>   
+                
         </div>                     
    </div>    
    
